@@ -12,4 +12,4 @@ COPY --from=maven /app/app.jar ./app.jar
 
 EXPOSE 8764
 
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-Dspring.cloud.config.uri=http://configserver-travelmanagementsystem.apps.na311.openshift.opentlc.com","-jar","/app/app.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-Dspring.cloud.config.uri=http://configserver-s2-travelsystem.apps.na311.openshift.opentlc.com","-jar","/app/app.jar"]
